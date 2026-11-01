@@ -41,6 +41,26 @@
   * "ship code / ra mắt tính năng / đóng gói release" -> ship
   * "bàn giao phiên bản / handoff công việc" -> handoff
   * "nén context / quản lý ngữ cảnh chủ động" -> strategic-compact
+  * "viết unit test / tạo test / kiểm thử hành vi" -> smart-test
+  * "audit test / tìm test rác / xóa test vô nghĩa" -> smart-test
+  * "tăng tốc CI / blast radius test / ci chậm" -> smart-test
+  * "thiết kế logo / tạo logo / vẽ logo / làm thương hiệu" -> logo-design
+  * "logo cho app / logo startup / brand identity / nhận diện thương hiệu" -> logo-design
+  * "brainstorm tính năng / thảo luận ý tưởng / socratic design" -> brainstorming
+  * "debug hệ thống / tìm nguyên nhân gốc rễ bug / fix bug khó" -> systematic-debugging
+  * "ủy quyền agent con / chia việc cho subagent / đa agent" -> subagent-driven-development
+  * "chạy song song agent / điều phối agent song song" -> dispatching-parallel-agents
+  * "kiểm tra trước khi hoàn tất / nghiệm thu bằng chứng / checklist hoàn thành" -> verification-before-completion
+  * "dùng git worktree / làm nhiều branch song song" -> using-git-worktrees
+  * "lập kế hoạch triển khai / chia nhỏ task / lên roadmap code" -> writing-plans
+  * "thực thi plan / code theo kế hoạch từng bước" -> executing-plans
+  * "pattern frontend / chuẩn react component / custom hook sạch" -> frontend-patterns
+  * "pattern backend / kiến trúc backend / cấu trúc api chuẩn" -> backend-patterns
+  * "đánh giá output ai / eval harness / benchmark mô hình" -> eval-harness
+  * "vòng lặp kiểm chứng / test-fix tự động lặp lại" -> verification-loop
+  * "bộ quy chuẩn thương hiệu / brand guideline" -> brand-guidelines
+  * "bảng màu theme / thiết kế theme giao diện" -> theme-factory
+  * "tạo web artifact / giao diện html tương tác tức thì" -> web-artifacts-builder
 
 ## 2. Tiêu chuẩn phản hồi
 - Giữ phong cách ngắn gọn, súc tích, giải quyết thẳng vào vấn đề.

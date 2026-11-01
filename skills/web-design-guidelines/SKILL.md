@@ -1,6 +1,7 @@
 ---
 name: web-design-guidelines
-description: Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".
+description: >
+  Web design guidelines: typography, accessibility, spacing, visual hierarchy audit. Triggers on: 'review ui', 'kiểm tra ux', 'audit thiết kế', 'chuẩn giao diện'.
 metadata:
   author: vercel
   version: "1.0.0"
