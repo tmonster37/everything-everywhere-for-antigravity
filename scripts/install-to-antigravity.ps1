@@ -1,10 +1,10 @@
-# Script cài đặt / đồng bộ plugins và rules sang Google Antigravity (~/.gemini/config/plugins/)
+# Script cai dat / dong bo plugins va rules sang Google Antigravity (~/.gemini/config/plugins/)
 param (
     [string]$TargetPluginsDir = "$env:USERPROFILE\.gemini\config\plugins"
 )
 
 Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host " [Google Antigravity] Đồng bộ bộ kỹ năng & Plugins" -ForegroundColor Green
+Write-Host " [Google Antigravity] Dong bo bo ky nang va Plugins" -ForegroundColor Green
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 if (-not (Test-Path $TargetPluginsDir)) {
@@ -15,8 +15,8 @@ $CurrentDir = Split-Path -Parent $PSScriptRoot
 $PluginsSource = Join-Path $CurrentDir "plugins"
 $RulesSource = Join-Path $CurrentDir "rules"
 
-Write-Host ">> Nguồn plugins: $PluginsSource"
-Write-Host ">> Đích Antigravity Plugins: $TargetPluginsDir"
+Write-Host ">> Nguon plugins: $PluginsSource"
+Write-Host ">> Dich Antigravity Plugins: $TargetPluginsDir"
 
 if (Test-Path $PluginsSource) {
     $plugins = Get-ChildItem -Path $PluginsSource -Directory
@@ -26,15 +26,15 @@ if (Test-Path $PluginsSource) {
         Copy-Item -Path $p.FullName -Destination $dest -Recurse -Force
         $count++
     }
-    Write-Host ">> Đã đồng bộ thành công $count plugins sang Google Antigravity!" -ForegroundColor Green
+    Write-Host ">> Da dong bo thanh cong $count plugins sang Google Antigravity!" -ForegroundColor Green
 }
 
-# Cập nhật AGENTS.md vào antigravity-kit-plugin/rules
+# Cap nhat AGENTS.md vao antigravity-kit-plugin/rules
 $agKitRules = "$TargetPluginsDir\antigravity-kit-plugin\rules"
 if (Test-Path $agKitRules) {
     Copy-Item -Path "$RulesSource\AGENTS.md" -Destination "$agKitRules\AGENTS.md" -Force
     Copy-Item -Path "$RulesSource\SOUL.md" -Destination "$agKitRules\SOUL.md" -Force
-    Write-Host ">> Đã cập nhật rules AGENTS.md & SOUL.md vào Antigravity Kit!" -ForegroundColor Yellow
+    Write-Host ">> Da cap nhat rules AGENTS.md va SOUL.md vao Antigravity Kit!" -ForegroundColor Yellow
 }
 
-Write-Host " Hoàn tất cấu hình Google Antigravity!" -ForegroundColor Cyan
+Write-Host " Hoan tat cau hinh Google Antigravity!" -ForegroundColor Cyan
